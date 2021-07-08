@@ -1,6 +1,7 @@
 # RegistroConsumoElectrico
 Aplicación para registrar y controlar el consumo electrico
 
+La aplicación está desplegada de forma automática en **Heroku**, la aplicación se llama [RegistroConsumoElectrico](https://registroconsumoelectrico.herokuapp.com/).
 
 ## Usando maven
 

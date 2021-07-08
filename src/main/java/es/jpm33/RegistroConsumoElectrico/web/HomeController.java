@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
 
-    @RequestMapping("/")
+    @RequestMapping("/Wellcome")
     @ResponseBody
     String home() {
         return "Hello, this is RegistroConsumoElectrico!";

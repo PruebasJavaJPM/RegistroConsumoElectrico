@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegistroConsumoElectrico</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementById('xhr').innerHTML = 'Iniciando petición XHR ...'
+
+            var xhr = new XMLHttpRequest()
+            xhr.responseType = 'text'
+            xhr.open('GET', '/Wellcome', true)
+
+            xhr.onload = function () {
+                if (xhr.readyState === xhr.DONE) {
+                    if (xhr.status === 200) {
+                        console.log('Petición XHR completada! Se ha obtenido un HTTP 200 OK', xhr)
+                        document.getElementById('xhr').innerHTML = xhr.response
+                    }
+                }
+            }
+
+            console.log('Lanzando la petición XHR', xhr)
+            xhr.send(null)
+        });
+    </script>
+</head>
+<body>
+    <h1>RegistroConsumoElectrico</h1>
+    <pre id="xhr"></pre>
+</body>
+</html>
