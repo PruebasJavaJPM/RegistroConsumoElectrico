@@ -11,3 +11,7 @@ Las principales acciones que haremos con maven serán:
 * **Generar imagen docker**: ``mvn spring-boot:build-image`` (**No configurado!**)
 * **Arranca la aplicación**: ``mvn spring-boot:start``
 * **Detiene la aplicación**: ``mvn spring-boot:stop``
+
+## Sobre heroku
+
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
